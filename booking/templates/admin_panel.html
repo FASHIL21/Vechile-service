@@ -1,0 +1,4 @@
+    <h2>Admin Panel</h2>
+    {% for b in data %}
+    <p>{{ b.user.username }} — {{ b.vehicle_no }} — {{ b.service_type }} — {{ b.status }}</p>
+    {% endfor %}

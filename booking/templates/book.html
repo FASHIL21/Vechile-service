@@ -1,0 +1,15 @@
+<h2>Book a Vehicle Service</h2>
+<form method="POST">
+  {% csrf_token %}
+  Vehicle No: <input name="vehicle_no"><br>
+  Service Type:
+  <select name="service_type">
+    <option>General Service</option>
+    <option>Oil Change</option>
+    <option>Engine Repair</option>
+    <option>Water Wash</option>
+  </select><br>
+  Date: <input type="date" name="booking_date"><br>
+  Time: <input type="time" name="booking_time"><br><br>
+  <button type="submit">Submit</button>
+</form>
